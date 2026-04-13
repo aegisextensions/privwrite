@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PrivWrite</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #070714; color: #e2e8f0; line-height: 1.7; }
+    .container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
+    h1 { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 700; color: #a78bfa; margin: 32px 0 12px; }
+    p { font-size: 14px; color: rgba(255,255,255,0.65); margin-bottom: 16px; }
+    .highlight { background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2); border-radius: 10px; padding: 16px; margin: 20px 0; }
+    .highlight p { color: #4ade80; margin: 0; font-weight: 600; }
+    a { color: #a78bfa; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: April 2026</div>
+
+  <div class="highlight">
+    <p>TL;DR: PrivWrite collects zero data. Our connect-src: none Content Security Policy makes it technically impossible for the extension to make any network requests. Your text never leaves your device.</p>
+  </div>
+
+  <h2>Data We Collect</h2>
+  <p>None. PrivWrite does not collect, store, transmit, or process any personal data, usage data, or content data on any server.</p>
+
+  <h2>Your Text and Content</h2>
+  <p>Any text you check with PrivWrite is processed entirely on your device using your browser's built-in AI or local grammar rules. It is never sent to any server — not ours, not anyone's. This is enforced by our <code>connect-src: none</code> Content Security Policy, which is a browser-level technical restriction, not a software promise.</p>
+
+  <h2>Local Storage</h2>
+  <p>PrivWrite stores the following data in your browser's local storage (chrome.storage.local), which never leaves your device:</p>
+  <ul style="margin:8px 0 16px 20px;color:rgba(255,255,255,0.6);font-size:14px;line-height:2;">
+    <li>Daily check count (to enforce the free tier limit)</li>
+    <li>Pro license key (if you have one)</li>
+    <li>Custom dictionary words (Pro feature)</li>
+  </ul>
+  <p>You can clear this data at any time by removing the extension or clearing Chrome's extension storage.</p>
+
+  <h2>Third Parties</h2>
+  <p>PrivWrite does not use any third-party analytics, crash reporting, advertising, or tracking services. There are no third-party scripts in the extension.</p>
+
+  <h2>Permissions Explained</h2>
+  <ul style="margin:8px 0 16px 20px;color:rgba(255,255,255,0.6);font-size:14px;line-height:2.2;">
+    <li><strong>contextMenus</strong> — Required to add "Check Grammar with PrivWrite" to the right-click menu</li>
+    <li><strong>storage</strong> — Required to save your daily count and settings locally</li>
+    <li><strong>activeTab</strong> — Required to inject the grammar suggestion overlay on the current tab when you request a check</li>
+  </ul>
+  <p>We do not use <code>&lt;all_urls&gt;</code> host permissions. PrivWrite only activates when you explicitly right-click and choose to check grammar.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Email <a href="mailto:aegisextensions@proton.me">aegisextensions@proton.me</a></p>
+
+  <p style="margin-top:40px;"><a href="index.html">← Back to PrivWrite</a></p>
+</div>
+</body>
+</html>
